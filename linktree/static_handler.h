@@ -1,6 +1,6 @@
 #include "crow_all.h"
 
-namespace hellocrow {
+namespace lk {
 
 enum StatusCodes {
   NOT_FOUND = 404
