@@ -1,3 +1,4 @@
+PREFIX=linktree
 HOST_PATH=$(realpath .)
 HOST_PORT=8080
 

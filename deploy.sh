@@ -1,13 +1,12 @@
-#!/bin/sh
 . common.sh
 
-docker run --rm --tid --name lk linktree-cc
+docker run --rm -tid --name lk ${PREFIX}-cc
 docker cp . lk:${TARGET_PATH}
-docker commit lk linktree-app
+docker commit lk ${PREFIX}-app
 docker stop lk
 
-pushd linktree
-docker build -t linktree-app .
-docker run --rm -p $HOST_PORT:$TARGET_PORT -e PORT=$TARGET_PORT linktree-app
+pushd ${PREFIX}
+  docker build -t ${PREFIX}-app .
+  docker run --rm -p ${HOST_PORT}:${TARGET_PORT} -e PORT=$TARGET_PORT ${PREFIX}-app
 popd
 
