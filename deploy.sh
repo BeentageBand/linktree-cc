@@ -1,7 +1,7 @@
 . common.sh
 
 docker run --rm -tid --name lk ${PREFIX}-cc
-docker cp . lk:${TARGET_PATH}
+docker cp ${PREFIX} lk:${TARGET_PATH}
 docker commit lk ${PREFIX}-app
 docker stop lk
 
