@@ -42,7 +42,6 @@ body{
 .otter {
   width: 160px;
   height:250px;
-  position: relative;
   animation: circular 60s linear infinite;
 }
 
@@ -314,6 +313,8 @@ body{
   margin-top: 2rem;
   width: 70%;
   max-width: 20.5rem;
+  position: relative;
+  bottom: 400px;
 }
 
 .links-container li {
@@ -354,6 +355,13 @@ body{
 .links-container li:active {
   /* box-shadow: inset -.2rem .2rem 0 rgba(233, 72, 138, 1); */
   background-color: var(--water);
+}
+
+.user-info h2 {
+    font-family: 'Fredoka one', sans-serif;
+    color: var(--shadow);
+    letter-spacing: .1rem;
+    margin: 
 }
 
 
