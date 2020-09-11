@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/otter.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
     />
     <title>Otter LinkTree: Homepage</title>
   </head>
   <body>
+    <!-- Otter background animation -->
     <div class="otter">
       <div class="ripple"></div>
       <div class="earLeft">
@@ -25,15 +26,12 @@
           <div class="eyeLeft">
             <div class="eyedot"></div>
           </div>
-
           <div class="eyeRight">
             <div class="eyedot"></div>
           </div>
-
           <div class="nose">
             <div class="nosedot"></div>
           </div>
-
           <div class="smile">
             <div class="curve1"></div>
             <div class="curve2"></div>
@@ -48,26 +46,51 @@
       </div>
       <div class="tail"></div>
     </div>
-
-    <div class="user-info">
-      <h2>Roberto Alanis</h2>
-    </div>
-    <div class="links-container">
-      <li class="left">
-        <a class="link" href="https://twitter.com/JosBez2">Twitter</a>
-      </li>
-
-      <li class="right">
-        <a class="link" href="https://github.com/BeentageBand/">GitHub</a>
-      </li>
-      <li class="left">
-        <a class="link" href="https://linkedin.com/in/jose-roberto-alanis/"
-          >LinkedIn</a
-        >
-      </li>
-      <li class="right">
-        <a class="link" href="/about">About</a>
-      </li>
+    <!-- One Page -->
+    <div class="ct" id="t1">
+      <div class="ct" id="t2">
+        <div class="ct" id="t3">
+          <div class="ct" id="t4">
+            <section>
+              <ul>
+                <a href="#t1"><h1 class="icon" id="uno">Home</h1></a>
+                <a href="#t2"><h1 class="icon" id="dos">LinkTree</h1></a>
+                <a href="#t3"><h1 class="icon" id="tres">Resume</h1></a>
+                <a href="#t4"><h1 class="icon" id="cuatro">Contact</h1></a>
+              </ul>
+              <div class="page" id="p1">
+                <div class="icon">
+                  <h2>Roberto Alanis</h2>
+                  <h3>Software Engineer - Embedded Systems - Distributed Systems</h2>
+                  <p>Brief</p>
+                </div>
+              </div>
+              <div class="page" id="p2">
+                <h2 class="title">LinkTree</span>
+                <h2 class="title">@roalanis</span>
+                <div class="linktree">
+                  <a href="https://github.com/BeentageBand/">
+                    <li class="fa fa-github"></li>
+                  </a>
+                  <a href="https://twitter.com/JosBez2">
+                    <li class="fa fa-twitter"></li>
+                  </a>
+                  <a href="https://linkedin.com/in/jose-roberto-alanis/">
+                    <li class="fa fa-linkedin"></li>
+                  </a>
+                </div>
+              </div>
+              <div class="page" id="p3">
+                <h2 class="title">Resume</h2>
+              </div>
+              <div class="page" id="p4">
+                <h2 class="title">Contact</h2>
+              </div>
+              <p class="credit">This page is built in C++</p>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

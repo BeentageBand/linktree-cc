@@ -25,11 +25,6 @@ int main (int argc, char ** argv) {
     static_handler.send_script(res, std::move(filename));
   });
 
-  CROW_ROUTE(app, "/about")
-  ([static_handler] (crow::request const & req, crow::response & res) {
-    static_handler.send_html(res, "about");
-  });
-
   CROW_ROUTE(app, "/<string>")
   ([static_handler] (crow::request const & req, crow::response & res, std::string uri) {
     res.redirect("/");
