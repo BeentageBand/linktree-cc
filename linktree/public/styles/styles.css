@@ -44,8 +44,8 @@ section {
   width:400%;
 }
 
-.page {
-  position: absolute;
+section, .page {
+  position: fixed;
 }
 
 #p1 {
