@@ -25,6 +25,33 @@ body{
   font-family: 'Josefin sans', sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-box {
+  width: 70%;
+  max-width: 20rem;
+}
+
+.header {
+  width: 20rem;
+  height: 16.5rem;
+  max-height: 19rem;
+}
+
+.header-icon h1 {
+  font-family: 'Fredoka one', sans-serif;
+  color: var(--shadow);
+  height: 90%;
+  max-height: 13.2rem;
+  background-color: var(--water);
+}
+
 .links-container {
   display: flex;
   flex:1;
@@ -32,7 +59,6 @@ body{
   align-items: center;
   margin-top: 2rem;
   width: 70%;
-  position: absolute;
   max-width: 20.5rem;
 }
 
@@ -74,17 +100,6 @@ body{
 .links-container li:active {
   /* box-shadow: inset -.2rem .2rem 0 rgba(233, 72, 138, 1); */
   background-color: var(--water);
-}
-
-.user-info {
-  position: absolute;
-  top: 20%;
-  align-self: center;
-}
-.user-info h2 {
-    font-family: 'Fredoka one', sans-serif;
-    color: var(--shadow);
-    letter-spacing: .1rem;
 }
 
 
@@ -155,3 +170,15 @@ body{
   color: var(--white);
 }
 
+.user-info h2 {
+    font-family: 'Fredoka one', sans-serif;
+    color: var(--shadow);
+    letter-spacing: .1rem;
+}
+
+.user-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem 0 2rem 0;
+}
