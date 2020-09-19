@@ -5,4 +5,4 @@ docker run -v ${HOST_PATH}:${TARGET_PATH} \
   -e PORT=${TARGET_PORT} \
   -e MONGODB_URI=${MONGODB_URI}\
   -w ${TARGET_PATH}/${PREFIX}/build \
-  -it bbox:latest ./${PREFIX}
+  -it ${PREFIX}-cc:latest ./${PREFIX}

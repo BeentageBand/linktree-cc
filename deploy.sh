@@ -1,6 +1,6 @@
 . common.sh
 
-docker run --rm -tid --name lk bbox:latest
+docker run --rm -tid --name lk ${PREFIX}-cc:latest
 docker cp ${PREFIX} lk:${TARGET_PATH}
 docker commit lk ${PREFIX}-app
 docker stop lk
