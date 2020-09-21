@@ -31,8 +31,10 @@ Then run the crow server.
 Build docker
 `docker ps`
 Use ID from container
-`docker cp . {ID}:/usr/src/linktree-cc`
-`docker commit {ID} linktree-cc:latest`
+```
+docker cp . {ID}:/usr/src/linktree-cc
+docker commit {ID} linktree-cc:latest
+```
 
 ## Build service image
 Create a docker image to run the application.
@@ -50,8 +52,9 @@ https://<secret-inlet>.herokuapp.com
 https://git.heroku.com/<secret-inlet>.git
 
 ## Push Container
-
-`heroky container:login`
-`heroku container:push web -a <secret-inlet>`
-`heroku container:release web -a <secret-inlet>`
-`heroku open -a <secret-inlet>`
+```
+heroky container:login
+heroku container:push web -a <secret-inlet>
+heroku container:release web -a <secret-inlet>
+heroku open -a <secret-inlet>
+```
