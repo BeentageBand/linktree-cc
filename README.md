@@ -53,7 +53,7 @@ https://git.heroku.com/<secret-inlet>.git
 
 ## Push Container
 ```
-heroky container:login
+heroku container:login
 heroku container:push web -a <secret-inlet>
 heroku container:release web -a <secret-inlet>
 heroku open -a <secret-inlet>
